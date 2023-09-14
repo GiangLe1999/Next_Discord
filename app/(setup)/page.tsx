@@ -14,7 +14,7 @@ const SetupPage = async () => {
 
   // Nếu user thực sự nằm trong 1 server nào thì chuyển hướng tới server đó
   if (server) {
-    return redirect(`/server/${server.id}`);
+    return redirect(`/servers/${server.id}`);
   }
 
   // Còn nếu user không nằm trong bất cứ server nào thì hiển thị nút Create Server

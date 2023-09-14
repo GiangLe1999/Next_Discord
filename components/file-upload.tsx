@@ -19,7 +19,13 @@ const FileUpload: FC<Props> = ({ onChange, value, endpoint }): JSX.Element => {
   if (value && fileType !== "pdf") {
     return (
       <div className="relative h-20 w-20">
-        <Image src={value} alt="Upload" className="rounded-full" fill />
+        <Image
+          src={value}
+          alt="Upload"
+          className="rounded-full"
+          fill
+          style={{ objectFit: "cover" }}
+        />
         <button
           onClick={() => onChange("")}
           className="bg-rose-500 text-white p-1 rounded-full absolute top-0 right-0 shadow-sm"

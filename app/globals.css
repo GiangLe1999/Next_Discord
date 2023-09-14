@@ -8,6 +8,11 @@ body,
   height: 100%;
 }
 
+/* Sidebar Navigation */
+.sidebar-nav-btn {
+  @apply rounded-[24px] w-12 h-12 grid place-items-center bg-white dark:bg-neutral-700 hover:!bg-emerald-500 hover:rounded-[16px] transition-all overflow-hidden border;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
